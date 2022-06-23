@@ -1,0 +1,221 @@
+a { text-decoration: none;}
+ul {list-style: none;}
+li {list-style: none;}
+:root {
+    --weblogo-color: #2196F3;
+    --text-color: #000000;
+    --background:#FFFFFF;
+    --portcontacts-color: #212121;
+    --tel-color:  #757575;
+    --sectionbackgroung: #F5F4FA;
+    --solutionbackground-color: #2F303A;
+}
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    background: var(--background);}
+
+/* Вся секция - Шапка: */
+
+.current {
+    color: var(--weblogo-color);}
+
+.href:focus, .href:hover {
+    color:var(--weblogo-color);}
+
+.email:hover, .email:focus {
+    color: var(--weblogo-color);
+}
+.href {
+font-weight: 500;
+letter-spacing: 0.02em;
+line-height: 1.14;
+color: var(--portcontacts-color);
+}
+
+/*Шапка- лого */
+.webstudio {
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 00.03em;
+}
+.web {
+color: var(--weblogo-color)}
+
+.studio {
+color: var(--text-color);}
+
+.studio >footer {
+    color: var(--text-color);
+}
+.contacts {
+color: var(--tel-color);
+letter-spacing: 0.02em;
+line-height: 1.14;
+}
+
+.contacts:hover{
+color: var(--weblogo-color);}
+.contacts:focus {
+    color: var(--weblogo-color);
+}
+
+/* Блок эффективные решения - заказать услугу */
+.solution {
+background: var(--solutionbackground-color);}
+
+.solution-text {
+font-size: 44px;
+font-weight: 900;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--background);
+}
+/* Кнопка "Заказать услугу" */
+
+button { 
+    cursor: pointer;}
+
+.button-orderservice {
+font-size: 16px;
+background: var(--weblogo-color);
+color: var(--background);
+border: 1px solid var(--text-color);
+padding: 10px 32px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+font-weight: 700;
+line-height: 1.62;}
+
+/* Наши преимущества стили */
+.advantages {
+line-height: 1.71;
+color: var(--tel-color);} 
+
+.advantage-header {
+line-height: 1.14;
+font-size: 14px;
+text-transform: uppercase;
+color: var(--portcontacts-color);}
+
+.whatwedoheader {
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+color: var(--portcontacts-color);}
+
+/* Наша команда - стили */ 
+.section-team {
+background: var(--sectionbackgroung);
+/* font-weight: 400;
+font-size: 16px;
+line-height: 1.18; */
+text-align: center;}
+
+.ourteam-header {
+font-size: 36px;
+line-height: 1.16;}
+
+/* Стиль секции с тенью */
+.team-style {
+box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;}
+
+.manager {
+color: var(--portcontacts-color);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.18;
+letter-spacing: 0.03em;}
+
+.position {
+color: var(--tel-color);
+font-size: 16px;
+line-height: 1.17;
+letter-spacing: 0.03em;}
+
+/*Футер-Вебстудия */
+.footer {
+    line-height: 1.71;
+    background: var(--solutionbackground-color);}
+.studiofooter {
+    color: var(--background);
+}
+/* Футер- Адрес */
+address {
+font-style: normal;}
+.address {
+color: var(--background);
+line-height: 1.71;
+}
+.contacts.footer {
+color: var(--tel-color);
+letter-spacing: 0.03em;
+}
+.contacts.footer:hover {
+    color: var(--weblogo-color);
+}
+
+/* Стили для потрфолио */
+
+.button-vse:hover {
+background-color: var(--sectionbackgroung);
+color: var(--text-color);}
+.button-vse:focus {
+color: var(--text-color);}
+
+.button-other:hover, .button-other:focus {
+background: var(--weblogo-color);
+color: var(--background);}
+
+.button-vse {
+font-size: 16px solid;
+font-weight: 500;
+line-height: 1.63;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--background);
+background-color: var(--weblogo-color);
+mix-blend-mode: multiply;
+box-shadow: var(--weblogo-color);
+border-radius: 4px;
+border: none;
+padding: 6px 22px;}
+
+.button-other {
+font-size: 16px solid;
+font-weight: 500;
+line-height: 1.63;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--portcontacts-color);
+background: var(--sectionbackgroung);
+border-radius: 4px;
+border: none;
+padding: 6px 22px;}
+
+.href.current {
+color: var(--weblogo-color);}
+
+.work-name {
+font-size: 18px;
+letter-spacing: 0.06em;
+line-height: 2;}
+
+.work-type {
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0.03em;
+line-height: 1.87;
+color: var(--tel-color);}
