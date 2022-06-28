@@ -24,29 +24,30 @@
 <nav class="navigation">
     <a href="/" class="webstudio"><span class="web">Web</span><span class="studio">Studio</span></a>
         <ul class="nav-list">
-            <li><a href="./index.html" class="href current">Студия</a></li>
-            <li><a href="./portfolio.html" class="href">Портфолио</a></li>
-            <li><a href="/" class="href">Контакты</a></li>
+            <li class="nav-listitem"><a href="./index.html" class="href current">Студия</a></li>
+            <li class="nav-listitem"><a href="./portfolio.html" class="href">Портфолио</a></li>
+            <li class="nav-listitem"><a href="/" class="href">Контакты</a></li>
         </ul>
 </nav>
 
-    <ul class="nav-listcontacts">
+<ul class="nav-listcontacts">
         <li><a href="mailto:info@example.com" class="contacts email">info@example.com</a></li>
         <li><a href="tel:0961111111" class="contacts">+380961111111</a></li>
-    </ul>
+</ul>
 </div>
 </header>
 
 <main>
 
     <section class="solution">
+        <div class="container">
         <h1 class="solution-text">Эффективные решения <br>
             для вашего бизнеса</h1>
         <button class="button-orderservice" type="button">Заказать услугу</button>
-
+        </div>
     </section>
     <!-- Advantages --> 
-    <section class="advantages">
+    <section class="advantages section">
         <div class="container">
         <!-- <h2>Наши преимущества</h2> -->
         <ul class="advantages-text">
@@ -77,46 +78,54 @@
         </div>
     </section>
     <!-- Чем мы занимаемся -->
-    <section class="whatwedo">
+    <section class="whatwedo section">
         <div class="container">
         <h2 class="whatwedoheader">Чем мы занимаемся</h2>
         <ul class="pics">
             <li class="pic">
-            <img src="./images/imgpic1.jpg" alt="компьютер" width="370" />
+            <img src="./images/imgpic1.jpg" alt="компьютер"/>
             </li>
             <li class="pic">
-            <img src="./images/imgpic2.jpg" alt="мобильный телефон" width="370"/>
+            <img src="./images/imgpic2.jpg" alt="мобильный телефон"/>
             </li>
             <li class="pic">
-            <img src="./images/imgpic3.jpg" alt="цветопередача" width="370"/>
+            <img src="./images/imgpic3.jpg" alt="цветопередача"/> 
             </li>
         </ul>
     </div>
     </section>
     <!-- Наша команда   -->
-    <section class="section-team">
+    <section class="section-team section">
         <div class="container">
         <h2  class="ourteam-header">Наша команда</h2>
         <ul class="team">
             <li class="team-style"> 
-            <img class="pic-demyanenko" src="./images/imgteam1.jpg" alt="Игорь Демьяненко" width="270" />
+            <img class="teampic" src="./images/imgteam1.jpg" alt="Игорь Демьяненко"/>
+            <div class="teamcontent-wrapper"> 
             <h3 class="manager">Игорь Демьяненко</h3>
             <p class="position" lang="en">Product Designer</p>
+            </div>
             </li>
             <li class="team-style">
-            <img class="pic-repina" src="./images/imgteam2.jpg" alt="Ольга Репина" width="270" />
+            <img class="teampic" src="./images/imgteam2.jpg" alt="Ольга Репина"/>
+            <div class="teamcontent-wrapper">
             <h3 class="manager">Ольга Репина</h3>
             <p class="position" lang="en">Frontend Developer</p>
+            </div>
             </li>
             <li class="team-style">
-            <img class="pic-tarasov" src="./images/imgteam3.jpg" alt="Николай Тарасов" width="270" />
+            <img class="teampic" src="./images/imgteam3.jpg" alt="Николай Тарасов"/>
+            <div class="teamcontent-wrapper">
             <h3 class="manager">Николай Тарасов</h3>
             <p class="position" lang="en">Marketing</p>
+            </div>
             </li>
             <li class="team-style">
-            <img class="pic-ermakov" src="./images/imgteam4.jpg" alt="Михаил Ермаков" width="270" />
+            <img class="teampic" src="./images/imgteam4.jpg" alt="Михаил Ермаков"/>
+            <div class="teamcontent-wrapper">
             <h3 class="manager">Михаил Ермаков</h3>
             <p class="position" lang="en">UI Designer</p>
+            </div>
             </li>
             </ul>
             </div>
@@ -125,9 +134,8 @@
 
         <!-- Контакты -->
         <footer class="footer">
-            <div class="footer-container">
-            
-            <a href="/index.html" class="webstudio"><span class="web">Web</span><span class="studiofooter">Studio</span></a>
+        <div class="container footer-container">
+        <a href="/" class="webstudio"><span class="web">Web</span><span class="studiofooter">Studio</span></a>
 
             <address>
             <ul class="nav-footer">
@@ -136,7 +144,8 @@
             <li><a href="tel:+380961111111" class="contacts footer">+38 097 111 11 11</a></li>
             </ul>
             </address>
-            </div>
+            
+        </div>
         </footer>
         
 </body>
