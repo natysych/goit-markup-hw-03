@@ -46,7 +46,7 @@ margin-right: auto;
 }
 .section {
 padding-top: 94px;
-padding-bottom: 94px;
+/* padding-bottom: 94px; */
 }
 .header {
 padding-top: 25px;
@@ -125,13 +125,12 @@ color: var(--weblogo-color);
 
 /* Блок эффективные решения - заказать услугу */
 .solution {
-height: 600px;
 background: var(--solutionbackground-color);
 }
 
 .solution-text {
 padding-top: 150px;
-margin-bottom: 30px;
+padding-bottom: 5px;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36;
@@ -143,7 +142,11 @@ color: var(--background);
 /* Кнопка "Заказать услугу" */
 
 button { 
-    cursor: pointer;}
+cursor: pointer;
+margin-bottom: 275px;
+margin-right: auto;
+margin-left: auto;
+}
 
 .button-orderservice {
 min-width: 200px;
@@ -153,8 +156,6 @@ color: var(--background);
 border: 1px solid var(--text-color);
 padding: 10px 32px;
 border-radius: 4px;
-align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 font-weight: 700;
 line-height: 1.62;
@@ -162,18 +163,16 @@ line-height: 1.62;
 
 /* Наши преимущества стили */
 .advantages {
-line-height: 1.71;
-color: var(--tel-color);
-flex-basis: calc((100%-4*30px)/4);
-} 
-.advantages-text {
-
 display: flex;
-align-items: center;
+align-items: flex-start;
 }
-.advantage:not(:last-child) {
+.advantage-items:not(:last-child) {
 margin-right: 30px;
 }
+.advantage-items {
+flex-basis: calc((100%-4*30px)/4);
+}
+
 .advantage-header {
 line-height: 1.14;
 font-size: 14px;
@@ -181,50 +180,57 @@ text-transform: uppercase;
 color: var(--portcontacts-color);
 }
 
-.whatwedoheader {
+.advantage-text {
+line-height: 1.71;
+color: var(--tel-color);
+} 
+
+.pics {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+/* Наша команда - стили */ 
+.section-team {
+margin-bottom: 94px;
+background: var(--sectionbackgroung);
+}
+
+.header-h {
 margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--portcontacts-color);
 }
-.pics {
+
+.team {
 display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.pic {
-flex-basis: calc((100%-90px) / 3);
-}
-/* Наша команда - стили */ 
-.section-team {
-height: 648px;
-background: var(--sectionbackgroung);
-text-align: center;
+flex-wrap: wrap;
+/* margin-left: -30px; */
 }
 
-.ourteam-header {
-margin-top: 94px;
-margin-bottom: 50px;
-font-size: 36px;
-line-height: 1.16;
-}
-.team {
-margin-left: -30px;
-display: flex;
-align-items: center;
-flex-wrap: wrap;
+.team-card:not(:nth-child(4n)) {
+margin-right: 30px;
+/* flex-basis: calc((100%-4*30px)/4); */
 }
 /* Стиль секции с тенью */
-.team-style {
-margin-left: 30px;
-
-flex-basis: calc((100%-120px) / 4);
-}
-
 .teamcontent-wrapper {
-/* margin: 30px 60px; */
-padding-top: 30px;
+padding: 20px 24px;
+text-align: center;
+border-right-width: 1px;
+border-right-style: solid;
+border-right-color: #EEEEEE;
+
+border-bottom-width: 3px;
+border-bottom-style: solid;
+border-bottom-color:#EEEEEE;
+
+border-left-width: 1px;
+border-left-style: solid;
+border-left-color: #EEEEEE;
+border-radius: 4px;
+flex-basis: calc((100%-120px)/4);
 }
 .manager {
 color: var(--portcontacts-color);
@@ -243,11 +249,14 @@ letter-spacing: 0.03em;
 
 /*Футер-Вебстудия */
 .footer {
-padding-top: 64px;
-padding-bottom: 56px;
+
 line-height: 1.71;
 background: var(--solutionbackground-color);}
 
+.footer-container {
+padding-top: 60px;
+padding-bottom: 60px;
+}
 .studiofooter {
 color: var(--background);
 }
@@ -300,8 +309,9 @@ color: var(--weblogo-color);
 
 .button-types {
 display: flex;
+align-items: flex-start;
 margin-left: -8px;
-margin-bottom: 60px;
+margin-bottom: 34px;
 justify-content: center;
 }
 .work-name {
@@ -321,14 +331,13 @@ color: var(--tel-color);
 .work-examples {
 display: flex;
 flex-wrap: wrap;
-margin-left: -30px;
-margin-top: -30px;
 margin-bottom: 94px;
 }
-.work-items:not(:nth-child(-3n)) {
-margin-left: 30px;
-margin-top: 30px;
-flex-basis: calc((100%-90px) / 3);
+.work-items:not(:nth-child(3n)) {
+margin-right: 30px;
+}
+.work-items {
+margin-bottom: 30px;
 }
 .workitems-wrapper {
 padding: 20px 24px;
