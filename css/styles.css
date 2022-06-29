@@ -306,7 +306,9 @@ margin-right: 8px;
 .href.current {
 color: var(--weblogo-color);
 }
-
+.buttons {
+    height: 54px;
+}
 .button-types {
 display: flex;
 align-items: flex-start;
