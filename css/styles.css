@@ -126,10 +126,12 @@ color: var(--weblogo-color);
 /* Блок эффективные решения - заказать услугу */
 .solution {
 background: var(--solutionbackground-color);
+padding-top: 150px;
+padding-bottom: 275px;
+text-align: center;
 }
 
 .solution-text {
-padding-top: 150px;
 padding-bottom: 5px;
 font-size: 44px;
 font-weight: 900;
@@ -143,9 +145,6 @@ color: var(--background);
 
 button { 
 cursor: pointer;
-margin-bottom: 275px;
-margin-right: auto;
-margin-left: auto;
 }
 
 .button-orderservice {
@@ -307,7 +306,7 @@ margin-right: 8px;
 color: var(--weblogo-color);
 }
 .buttons {
-    height: 54px;
+height: 54px;
 }
 .button-types {
 display: flex;
