@@ -46,16 +46,20 @@ margin-right: auto;
 }
 .section {
 padding-top: 94px;
-/* padding-bottom: 94px; */
+padding-bottom: 94px;
 }
 .header {
 padding-top: 25px;
 padding-bottom: 25px;
 }
 .header-container {
+/* font-weight: 500px; */
 display: flex;
 align-items: center;
-justify-content: space-between;
+font-weight: 500;
+letter-spacing: 0.02em;
+line-height: 1.14;
+/* justify-content: space-between; */
 }
 .navigation {
 display: flex;
@@ -66,26 +70,21 @@ display: flex;
 align-items: center;
 }
 .nav-listcontacts {
+margin-left: auto;
 display: flex;
 align-items: center;
 }
-.current {
-color: var(--weblogo-color);}
 
 .href:focus, .href:hover {
 color:var(--weblogo-color);
 }
-
-.email:hover, .email:focus {
-color: var(--weblogo-color);
-}
-.nav-listitem:not(:last-child) {
-margin-right: 50px;
-font-weight: 500;
-letter-spacing: 0.02em;
-line-height: 1.14;
+.href {
 color: var(--portcontacts-color);
 }
+.nav-listitem:not(:last-child) {
+margin-right: 50px; 
+}
+
 
 /*Шапка- лого */
 .webstudio {
@@ -110,6 +109,7 @@ margin-left: auto;
 margin-right: 50px;
 }
 .contacts {
+font-weight: 500px;
 color: var(--tel-color);
 letter-spacing: 0.02em;
 line-height: 1.14;
@@ -126,13 +126,15 @@ color: var(--weblogo-color);
 /* Блок эффективные решения - заказать услугу */
 .solution {
 background: var(--solutionbackground-color);
-padding-top: 150px;
-padding-bottom: 275px;
+padding-top: 200px;
+padding-bottom: 200px;
 text-align: center;
 }
 
 .solution-text {
-padding-bottom: 5px;
+width: 696px;
+margin:auto;
+margin-bottom: 30px;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36;
@@ -173,6 +175,7 @@ flex-basis: calc((100%-4*30px)/4);
 }
 
 .advantage-header {
+margin-bottom: 10px;
 line-height: 1.14;
 font-size: 14px;
 text-transform: uppercase;
@@ -183,7 +186,9 @@ color: var(--portcontacts-color);
 line-height: 1.71;
 color: var(--tel-color);
 } 
-
+.whatwedo {
+padding-top: 0px;
+}
 .pics {
 display: flex;
 align-items: center;
@@ -191,7 +196,6 @@ justify-content: space-between;
 }
 /* Наша команда - стили */ 
 .section-team {
-margin-bottom: 94px;
 background: var(--sectionbackgroung);
 }
 
@@ -209,6 +213,11 @@ flex-wrap: wrap;
 /* margin-left: -30px; */
 }
 
+.team-card {
+background-color: var(--background);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
 .team-card:not(:nth-child(4n)) {
 margin-right: 30px;
 /* flex-basis: calc((100%-4*30px)/4); */
@@ -217,21 +226,10 @@ margin-right: 30px;
 .teamcontent-wrapper {
 padding: 20px 24px;
 text-align: center;
-border-right-width: 1px;
-border-right-style: solid;
-border-right-color: #EEEEEE;
-
-border-bottom-width: 3px;
-border-bottom-style: solid;
-border-bottom-color:#EEEEEE;
-
-border-left-width: 1px;
-border-left-style: solid;
-border-left-color: #EEEEEE;
-border-radius: 4px;
 flex-basis: calc((100%-120px)/4);
 }
 .manager {
+margin-bottom: 10px;
 color: var(--portcontacts-color);
 font-size: 16px;
 font-weight: 500;
@@ -248,14 +246,12 @@ letter-spacing: 0.03em;
 
 /*Футер-Вебстудия */
 .footer {
-
-line-height: 1.71;
-background: var(--solutionbackground-color);}
-
-.footer-container {
 padding-top: 60px;
 padding-bottom: 60px;
+line-height: 1.71;
+background: var(--solutionbackground-color);
 }
+
 .studiofooter {
 color: var(--background);
 }
@@ -302,23 +298,22 @@ padding: 6px 22px;}
 .buttons:not(:last-child) {
 margin-right: 8px;
 }
-.href.current {
+.current {
 color: var(--weblogo-color);
 }
-.buttons {
-height: 54px;
-}
+
 .button-types {
 display: flex;
 align-items: flex-start;
 margin-left: -8px;
-margin-bottom: 34px;
 justify-content: center;
+margin-bottom: 50px;
 }
 .work-name {
 font-size: 18px;
 letter-spacing: 0.06em;
 line-height: 2;
+margin-bottom: 4px;
 }
 
 .work-type {
@@ -332,7 +327,6 @@ color: var(--tel-color);
 .work-examples {
 display: flex;
 flex-wrap: wrap;
-margin-bottom: 94px;
 }
 .work-items:not(:nth-child(3n)) {
 margin-right: 30px;
@@ -342,5 +336,7 @@ margin-bottom: 30px;
 }
 .workitems-wrapper {
 padding: 20px 24px;
-border: 1px solid #EEEEEE;;
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
 }
